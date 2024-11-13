@@ -1,0 +1,572 @@
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+header {
+    background: transparent;
+    z-index: 10;
+}
+
+button.navbar-toggler {
+    margin-left: 300px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: bold;
+    padding: 0.75rem 1rem;
+    transition: width 0.3s ease;
+    
+}
+
+.navbar-nav .nav-link:hover {
+    border-bottom: solid rgb(89, 247, 253) 2px;
+}
+
+a.nav-link {
+    text-transform: uppercase;
+    font-weight: 500 !important;
+    padding: 35px 30px !important;
+}
+
+
+
+/* Hero Section */
+    /* Hero slider container */
+    .hero-slider {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+      }
+  
+      /* Slider wrapper for images */
+      .slider-wrapper {
+        display: flex;
+        width: 300%;
+        height: 100%;
+        transition: transform 0.8s ease;
+      }
+  
+      /* Each slide */
+      .slider-wrapper .slide {
+        flex: 1;
+        position: relative;
+      }
+  
+      .slider-wrapper .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      /* Caption styling */
+      .slider-caption {
+        position: absolute;
+        top: 60%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        width: 600px;
+      }
+  
+      .slider-caption h1 {
+        font-size: 3rem;
+        margin: 0;
+        font-family: "Julius Sans One", serif;
+        text-transform: uppercase;
+
+      }
+  
+      .slider-caption p {
+        font-size: 1.2rem;
+        margin: 0;
+        font-family: "Julius Sans One", serif;
+
+      }
+  
+      /* Navigation buttons */
+      .nav-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 1.5rem;
+      }
+  
+      .prev-btn {
+        left: 10px;
+      }
+  
+      .next-btn {
+        right: 10px;
+      }
+
+
+.carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 33%;
+    color: #fff;
+    text-align: center;
+    animation: fadeInUp 2s ease-in-out;
+    text-transform: uppercase;
+    z-index: 9999;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: "Julius Sans One", serif;
+}
+
+
+.hero-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)); 
+    z-index: 1; 
+  }
+
+@media (min-width: 1200px) {
+    .display-4 {
+        font-size: 38PX;
+    }
+}
+
+
+
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+button.btn.btn-dark {
+    text-transform: uppercase;
+    padding: 10px 25px 10px 25px;
+}
+
+section#about {
+    background-image: url('images/white-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+@media (max-width: 768px) {
+    section#about {
+      height: auto; 
+      min-height: 50vh; 
+    }
+  }
+
+
+img.img-fluid:hover {
+    transform: skew(1deg, 1deg);
+}
+img.img-fluid {
+    transition: ease-in-out .3s;
+}
+
+
+
+
+/*  3 column cards  */
+.custom-carousel .carousel-item {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 350px;
+    height: 400px;
+    margin: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 2-column layout for medium screens */
+@media (max-width: 991px) {
+    .card {
+        width: 300px;
+        height: 350px;
+    }
+}
+
+/* 1-column layout for small screens */
+@media (max-width: 767px) {
+    .carousel-item {
+        display: block;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+}
+
+/* Section styling */
+section#\33 column {
+    background-image: url('images/dark-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 110vh;
+    padding-left: 50PX;
+    PADDING-RIGHT: 50Px;
+}
+
+
+
+
+
+/*FEATurEs*/
+.feature-section {
+    background-color: #f8f9fa;
+    padding: 60px;
+    position: relative;
+  }
+  .feature-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: ease-in-out .3s;
+  }
+  .feature-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 6px rgb(0 0 0 / 60%);
+}
+
+
+  .feature-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .feature-card .category {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #6c757d;
+    margin-top: 10px;
+    text-align: left;
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+.feature-card .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 12px;
+    text-transform: uppercase;
+}
+.feature-card .description {
+    font-size: 14px;
+    color: #495057;
+    margin-top: 10px;
+    padding-left: 12PX;
+    padding-right: 12PX;
+    text-align: JUSTIFY;
+    text-transform:lowercase;
+}
+  .feature-card .btn {
+    width: 100%;
+    margin-top: 15px;
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+
+  section#\33 features {
+    background-image: url('images/white-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+button.btn.btn-primary {
+    BACKGROUND: #21392e !important;
+    FONT-SIZE: 12px;
+    letter-spacing: 4px;
+    text-align: justify;
+    padding: 13px;
+}
+
+i.fa.fa-arrow-right {
+    FLOAT: RIGHT;
+    FONT-SIZE: 26px;
+}
+
+
+
+
+
+
+.feature-text-area {
+    background: #fFF;
+    border-radius: 16pX;
+    TEXT-ALIGN: CENTER;
+    PADDING: 7px;
+    WIDTH: 319px;
+    MARGIN-LEFT: 25px;
+    margin-top: -22px;
+    POSITION: ABSOLUTE;
+    font-size: 16PX;
+}
+
+
+
+
+
+.footer {
+    background-image: url('images/white-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+  .footer .footer-logo h1 {
+    font-size: 3rem;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+  }
+  
+  .footer button {
+    padding: 10px;
+  }
+  
+  .footer h5, .footer h2 {
+    margin-top: 20px;
+  }
+  
+  .footer .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  
+  .footer .social-icons img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer .col-md-12 {
+      text-align: center;
+    }
+  }
+  
+
+  .footer-menu.col-lg-6 {
+    float: right;
+    text-align: RIGHT;
+}
+
+a {
+    color: black;
+    text-decoration: none !important;
+}
+
+a.footmenu {
+    text-transform: uppercase;
+    letter-spacing: 3PX;
+    FONT-SIZE: 11px;
+    font-weight: 600;
+    padding-right: 36px;
+}
+
+p.copyright{
+    
+    text-transform: uppercase;
+    letter-spacing: 3PX;
+    FONT-SIZE: 11px;
+    font-weight: 600;
+    padding-right: 36px;
+
+}
+
+.me-2 {
+    margin-right: -9.5rem !important;
+}
+
+.form-control {
+    width: 90% !important;
+}
+
+h5.fw-bold {
+    text-transform: uppercase !important;
+    letter-spacing: 3PX !important;
+    FONT-SIZE: 14px !important;
+}
+
+
+.icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2e2d2d;
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    padding-left: 13px;
+    padding-top: 6px;
+  }
+  .icon-circle:hover {
+    background-color: #ffffff;
+    color: black;  /* Slightly lighter black on hover */
+  }
+
+
+
+
+
+
+
+
+/*GAlrY*/
+
+.gallery-item {
+      margin-bottom: 30px;
+    }
+    .gallery-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: ease-in-out .3s;
+    }
+    .gallery-item img:hover {
+        transform: scale(1.05);
+    }
+    .filter-btn {
+      margin-right: 10px;
+      margin-bottom: 20px;
+    }
+    .hide {
+      display: none;
+    }
+
+    .gallery {
+        background-image: url('images/dark-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+        height: 120;
+    }
+    h2.text-center.mb-4 {
+        COLOR: WHITE !important;
+        PADDING-TOP: 30px;
+    }
+
+    button.btn.filter-btn {
+        COLOR: WHITE;
+        TEXT-TRANSFORM: UPPERCASE;
+        PADDING: 20px;
+        LETTER-SPACING: 4PX;
+        FONT-SIZE: 11px;
+    }
+    
+
+
+
+    .reserve-btn {
+        position: fixed;
+        bottom: 15%;
+        right: 0;
+        padding: 17px 20px;
+        background-color: #465d49c9;
+        color: white;
+        z-index: 1000;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 11px;
+        border: 1px solid #fff;
+        transform: rotate(270deg);
+        margin-right: -50px;
+    }
+      
+      .reserve-btn:hover {
+        background-color: #465d49f9; 
+        font-weight: bold;
+        border: 1px solid #fff;
+      }
+
+
+    
+    nav.navbar.navbar-expand-lg.navbar-dark {
+        margin-top: -25px;
+    }
+
+    span.carousel-control-prev-icon {
+        opacity: 0.2;
+    }
+
+
+
+button.btn.btn-light.mt-3.slider-btn {
+
+        background: #2a322b !important;
+        color: WHITE;
+        border: 0;
+        PADDING: 10px 20px 10px 20px;
+        text-transform: uppercase;
+        LETTER-SPACING: 3PX;
+        FONT-SIZE: 11px;
+    }
